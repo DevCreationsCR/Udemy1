@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/Css/styles.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
+    <title>Immo Hub</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <input type="checkbox" class="navbar__check" id="navbar__check" />
+        <label for="navbar__check" class="navbar__button">
+            <i class="fa fa-2x fa-stream text-blanc"></i>
+        </label>
+        <div class="navbar__back"></div>
+        <div class="navbar__nav">
+            <ul class="navbar__list">
+                <li><a href="#" class="navbar__liens">Accueil</a></li>
+                <li><a href="#" class="navbar__liens">Galerie</a></li>
+                <li><a href="#" class="navbar__liens">Revues</a></li>
+                <li><a href="#" class="navbar__liens">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header class="header">
+        <img class="header__logo" src="assets/logo-black.png" />
+        <div class="header__box">
+            <div>
+                <h2 class="titre-text-1 text-blanc">Louer un appartement chez nous</h2>
+                <p class="titre-text-2 text-blanc">Situé au coeur de cette ville géniale.</p>
+                <a href="#" class="button button-blanc mt-court">Louez sur Airbnb</a>
+            </div>
+            <form class="header__form">
+                <h2 class="titre-text-3 text-noir">Réservez un appartement ici ou sur <span class="text-rouge">Airbnb</span></h2>
+                <input type="date" placeholder="jj/mm/aa" class="input"/>
+                <input type="email" placeholder="Votre adresse email " class="input"/>
+                <input type="text" placeholder="Votre Nom" class="input"/>
+                <input type="text" placeholder="Votre Numéro de téléphone" class="input"/>
+                <button class="button button-rouge mt-court">Réservez maintenant</button>
+            </form>
+        </div>
+    </header>
+
+    <div class="fonction">
+        <div class="card">
+            <img class="card__img" src="Assets/maisons/card1.jpg" />
+            <h3 class="card__titre">Une belle décoration d'intérieur</h3>
+            <p class="card__descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in eleifend justo. In pellentesque tellus pretium, mattis quam at, gravida lorem. Cras eros lorem, imperdiet nec consectetur vitae, ullamcorper eget tellus.</p>
+            <a href="#" class="button button-rouge mt-court">Réservez sur Airbnb</a>
+        </div>
+    
+        <div class="card">
+            <img class="card__img" src="Assets/maisons/card2.jpg" />
+            <h3 class="card__titre">À seulement 50m du métro</h3>
+            <p class="card__descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in eleifend justo. In pellentesque tellus pretium, mattis quam at, gravida lorem. Cras eros lorem, imperdiet nec consectetur vitae, ullamcorper eget tellus.</p>
+            <a href="#" class="button button-rouge mt-court">Réservez sur Airbnb</a>
+        </div>
+
+        <div class="card">
+            <img class="card__img" src="Assets/maisons/card3.jpg" />
+            <h3 class="card__titre">Une situation centrale parfaite</h3>
+            <p class="card__descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in eleifend justo. In pellentesque tellus pretium, mattis quam at, gravida lorem. Cras eros lorem, imperdiet nec consectetur vitae, ullamcorper eget tellus.</p>
+            <a href="#" class="button button-rouge mt-court">Réservez sur Airbnb</a>
+        </div>
+    </div>
+
+    <section class="galerie">
+        <h2 class="section__titre">Consultez notre galerie</h2>
+        <div class="galerie__content mt-moyen">
+            <img src="assets/maisons/image1.jpg" class="galerie__img" />
+            <img src="assets/maisons/image2.jpg" class="galerie__img" />
+            <img src="assets/maisons/image3.jpg" class="galerie__img" />
+            <img src="assets/maisons/card2.jpg" class="galerie__img" />            
+            <img src="assets/maisons/card3.jpg" class="galerie__img" />
+            <img src="assets/maisons/card1.jpg" class="galerie__img" />
+        </div>
+    </section>
+
+    <section class="revues">
+        <h2 class="section__titre">Airbnb Revues</h2>
+        <div class="mt-court">
+            <a class="button button-blanc">Ecrire une revue</a>
+            <a class="button button-rouge">Lire sur Airbnb</a>
+        </div>  
+
+        <div class="revues__container">
+            <div class="revue">
+                <img src="Assets/avatars/avatar-1.jpg" class="revue__img" />
+                <h3 class="revue__titre">Nous avons adorés cette endroit</h3>
+                <div>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                </div>
+                <p class="revue__descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ante justo, 
+                    pellentesque nec nibh vehicula, interdum scelerisque mauris. Ut sed ipsum sodales, accumsan risus.</p>
+                <p class="revue__auteur">John Doe</p>
+            </div>
+
+            <div class="revue">
+                <img src="Assets/avatars/avatar-2.jpg" class="revue__img" />
+                <h3 class="revue__titre">Nous avons adorés cette endroit</h3>
+                <div>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                </div>
+                <p class="revue__descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ante justo, 
+                    pellentesque nec nibh vehicula, interdum scelerisque mauris. Ut sed ipsum sodales, accumsan risus.</p>
+                <p class="revue__auteur">John Doe</p>
+            </div>
+
+            <div class="revue">
+                <img src="Assets/avatars/avatar-3.jpg" class="revue__img" />
+                <h3 class="revue__titre">Nous avons adorés cette endroit</h3>
+                <div>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star text-rouge"></i>
+                    <i class="fa fa-2x fa-star"></i>
+                </div>
+                <p class="revue__descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ante justo, 
+                    pellentesque nec nibh vehicula, interdum scelerisque mauris. Ut sed ipsum sodales, accumsan risus.</p>
+                <p class="revue__auteur">John Doe</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="services__texte">
+            <h3 class="services__titre">Expérience Vienna</h3>
+            <p class="services__descrip">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Duis ante justo, pellentesque nec nibh vehicula, interdum scelerisque mauris. Ut sed ipsum sodales, 
+                malesuada neque eget, accumsan risus.</p>
+            <img src="Assets/maisons/image2.jpg" class="services__img" />
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Appartement Services</th>
+                    <th>Disponibilités</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Toute la maison</td>
+                    <td><i class="fa fa-check text-rouge"></i></td>
+                </tr>
+
+                <tr>    
+                    <td>Cuisine</td>
+                    <td><i class="fa fa-check text-rouge"></i></td>
+                </tr>
+
+                <tr>    
+                    <td>Wifi</td>
+                    <td><i class="fa fa-times"></i></td>
+                </tr>
+
+                <tr> 
+                    <td>Balcon</td>
+                    <td><i class="fa fa-check text-rouge"></i></td>
+                </tr>
+
+                <tr>
+                    <td>Air conditionné</td>
+                    <td><i class="fa fa-check text-rouge"></i></td>
+                </tr>   
+            </tbody>
+        </table>
+    </section>
+
+    <section class="social">
+        <h3 class="social__titre">Retrouvez-nous sur</h3>
+        <div class="social__list">
+            <a href="#" class="social__lien"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social__lien"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social__lien"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social__lien"><i class="fab fa-snapchat"></i></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img class="footer_img" src="Assets/logo-white.png" />
+        <a href="#" class="footer__copy">&copy; Olivia Remiki</a>
+    </footer>
+
+</body>
+</html>

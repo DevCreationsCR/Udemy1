@@ -1,0 +1,92 @@
+.navbar{
+
+    &__back{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 20rem;
+        position: fixed;
+        top: 2.5rem;
+        right: 2.5rem;
+        background-color: $color-blanche;
+        z-index: 100;
+        transition: all 0.5s;
+    }
+
+    &__button{
+        height: 6rem;
+        width: 6rem;
+        border-radius: 20rem;
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        background-color: $color-principal;
+        z-index: 200;
+        transition: all 0.5s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    &__nav{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 150;
+        opacity: 0;
+        width: 0;
+        transition: all 0.5s;
+    }
+
+    &__check{
+        display: none;
+    }
+
+    &__list{
+        @include centerElement(50%, 50%);
+        list-style: none;
+        z-index: 150;
+        
+        
+        & :not(:last-child){
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__liens{
+        display: inline-block;
+        text-decoration: none;
+        font-size: 3rem;
+        font-weight: 400;
+        color: $color-noir;
+        text-transform: uppercase;
+        font-family: $font-principal;
+        padding: 1rem 2rem;
+        background-image: linear-gradient(
+            120deg,
+            $color-blanche 0%, 
+            $color-blanche 50%,
+            $color-principal 50%,
+        );
+        background-size: 230%;
+        transition: all 0.5s
+        ;
+
+        &:hover{
+            background-position: 100%;
+            color: $color-blanche;
+            transform: translateY(1rem);
+        }
+    }
+
+    &__check:checked ~ &__back{
+        transform: scale(80);
+    }
+
+    &__check:checked ~ &__nav{
+        width: 100vw;
+        opacity: 1;
+    }
+}

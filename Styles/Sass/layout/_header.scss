@@ -1,0 +1,70 @@
+.header{
+    height: 100vh;
+    background-image: url("../../../Assets/maisons/home-image-1.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    @include responsive(desktop, small){
+        height: 130vh;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+    }
+
+    @include responsive(desktop, moyen){
+        height: 135vh;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+    }
+    
+    &__logo{
+        width: 15rem;
+        margin: 5rem;
+    }
+
+    &__box{
+        width: 90%;
+        @include centerElement(50%, 50%);
+
+        @include responsive(desktop, small){
+            @include centerElement(50%, 50%);
+            grid-template-columns: 1fr;
+            row-gap: 2rem;
+            text-align: center;
+        }
+
+        @include responsive(desktop, moyen){
+            @include centerElement(68%, 50%);
+            grid-template-columns: 1fr;
+            row-gap: 2rem;
+            text-align: center;
+
+        }
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        align-items: center;
+    }
+
+    &__form{
+        justify-self: end;
+        background-color: $color-blanche;
+        width: 80%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include responsive(desktop, small){
+            justify-self: center;
+        }
+        @include responsive(desktop, moyen){
+            justify-self: center;
+        }
+    }
+
+    
+}

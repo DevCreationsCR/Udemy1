@@ -1,0 +1,32 @@
+.revue{
+    background-color: $color-blanche;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-rows: repeat(5, min-content);
+    row-gap: 2rem;
+    justify-items: center;
+
+    &__titre{
+        font-size: 2rem;
+        font-family: $font-principal;
+        font-weight: 300;
+        color: $color-noir;
+    }
+
+    &__descrip{
+        font-family: $font-secondaire;
+        font-size: 1.6rem;
+        color: $color-noir;
+    }
+
+    &__auteur{
+        font-size: 1.8rem;
+        font-style: italic;
+        font-family: $font-principal;
+    }
+
+    &__img{
+        width: 10rem;
+        border-radius: 10rem;
+    }
+}

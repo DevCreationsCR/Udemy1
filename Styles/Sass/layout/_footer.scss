@@ -1,0 +1,22 @@
+.footer{
+    background-color: $color-principal;
+    display: flex;
+    padding: 3rem 10rem;
+    justify-content: space-between;
+    align-items: center;
+
+    @include responsive(desktop, small){
+        padding: 3rem 4rem;
+    }
+
+    &__logo{
+        width: 15rem;
+    }
+
+    &__copy{
+        text-decoration: none;
+        color: $color-blanche;
+        font-family: $font-principal;
+        font-size: 1.8rem;
+    }
+}

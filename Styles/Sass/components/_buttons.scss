@@ -1,0 +1,24 @@
+%button{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem;
+    background-color: transparent;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+
+.button{
+    @extend %button;
+}
+
+.button-blanc{
+    background-color: $color-blanche;
+    color: $color-noir;
+}
+
+.button-rouge{
+    background-color: $color-principal;
+    color: $color-blanche;
+}

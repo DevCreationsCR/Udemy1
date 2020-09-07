@@ -1,0 +1,62 @@
+@mixin centerElement($top, $left){
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(-50%, -50%);
+}
+
+@mixin responsive($typedev, $breakpoint) {
+    @if $typedev==desktop {
+        @if $breakpoint==small {
+            @media (max-width: 639px) {
+                @content;                
+            }            
+        } 
+        
+        @if $breakpoint==moyen {
+            @media (max-width: 767px) {
+                @content;                
+            }            
+        }       
+
+        @if $breakpoint==large {
+            @media (max-width: 1023px) {
+                @content;                
+            }            
+        }       
+
+        @if $breakpoint==xlarge {
+            @media (min-width: 1279px) {
+                @content;                
+            }            
+        }       
+      
+    }
+    
+    @if $typedev==mobile {
+        @if $breackpoint==small {
+            @media (min-width: 640px) {
+                    @content;                
+            }            
+        } 
+        
+        @if $breackpoint==moyen {
+            @media (min-width: 768px) {
+                    @content;                
+            }            
+        }
+
+        @if $breackpoint==large {
+            @media (min-width: 1024px) {
+                    @content;                
+            }            
+        }
+
+        @if $breackpoint==xlarge {
+            @media (min-width: 1280px) {
+                    @content;                
+            }            
+        }
+        
+    }
+}
