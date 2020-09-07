@@ -4,7 +4,7 @@
 
 ### Technologies utilisées
  * HTML5
- * CSS3 5Flexbox, Grid)
+ * CSS3 (Flexbox, Grid)
 * SASS
 
 ### Objectifs de la mission
